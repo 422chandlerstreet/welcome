@@ -1,0 +1,37 @@
+body,
+div,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: "TikTok Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100;
+}
+
+body > header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    padding: 0;
+    backdrop-filter: blur(10px);
+
+    nav ul li a.active {
+        text-decoration: underline;
+    }
+}
+
+main {
+    margin-top: 2rem;
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}
